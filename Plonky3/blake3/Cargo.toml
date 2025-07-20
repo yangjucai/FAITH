@@ -1,0 +1,21 @@
+[package]
+name = "p3-blake3"
+# TODO: Replace this generic plonky3 description with one specific to this crate...
+description.workspace = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+p3-symmetric.workspace = true
+p3-util.workspace = true
+
+blake3.workspace = true
+
+[features]
+neon = ["blake3/neon"]
+parallel = ["blake3/rayon"]

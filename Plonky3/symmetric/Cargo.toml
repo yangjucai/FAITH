@@ -1,0 +1,20 @@
+[package]
+name = "p3-symmetric"
+# TODO: Replace this generic plonky3 description with one specific to this crate...
+description.workspace = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+p3-field.workspace = true
+
+itertools.workspace = true
+serde = { workspace = true, features = ["alloc"] }
+
+[dev-dependencies]
+p3-koala-bear.workspace = true
