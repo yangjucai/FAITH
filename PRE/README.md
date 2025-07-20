@@ -139,6 +139,12 @@ $ cargo test
 $ cargo bench
 ```
 
+#### Running Third Attempt
+
+```
+$ cargo test thirdAttempt -- --nocapture
+```
+
 # Relation to Proxy Re-Encryption
 
 In the academic literature, _transform encryption_ is referred to as _proxy re-encryption_. A proxy re-encryption (PRE) scheme is a public-key encryption scheme, where each participant has a pair of related keys, one public and one private, which are mathematically related. Alice encrypts a message to Bob using his public key, and Bob decrypts the encrypted message using his public key to retrieve the original message.
